@@ -10,7 +10,7 @@ const helpers = require('./utils/helpers');
 const hbs = exphbs.create({ helpers });
 
 const sess = {
-    // secret: process.env.DB_SESSION_SECRET,
+    secret: process.env.DB_SESSION_SECRET,
     cookie: { maxAge: 7200000 },
     resave: false,
     saveUninitialized: true,
